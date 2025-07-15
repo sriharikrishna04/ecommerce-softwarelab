@@ -1,0 +1,228 @@
+/* App.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  color: #cd1b1b;
+  min-height: 100vh;
+  background-color: beige;
+}
+
+a {
+  text-decoration: none;  
+  color: inherit;
+}
+
+nav {
+  background-color:darkgoldenrod;
+  padding: 15px 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  margin: 0 15px;
+  font-weight: 500;
+  color: #850e0e;
+}
+
+nav button {
+  background-color: #e11d48;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+nav button:hover {
+  background-color: #be123c;
+}
+
+/* --- Navbar Professional Styles --- */
+.navbar {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 12px 24px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #d8cb0c;
+  letter-spacing: 2px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.navbar-link {
+  font-size: 1rem;
+  color: #850e0e;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navbar-link:hover {
+  color: #be123c;
+}
+
+.navbar-logout {
+  background: #e11d48;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: 8px;
+  transition: background 0.3s;
+}
+
+.navbar-logout:hover {
+  background: #be123c;
+}
+
+/* --- Home Page Centering --- */
+.home-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  text-align: center;
+}
+
+/* --- Main Content Alignment for Overall Page --- */
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 16px 48px 16px;
+  min-height: 80vh;
+  background: #f9f9fb;
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* Update .container for more flexibility */
+.container {
+  width: 100%;
+  max-width: 520px;
+  margin: 40px auto;
+  padding: 32px 24px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container input, .container button, .container p {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+}
+
+.container h2 {
+  text-align: center;
+  width: 100%;
+}
+
+h2, h3 {
+  color: #d8cb0c;
+}
+
+input, button {
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+/* --- Product Grid: Always 3 per row on desktop, 2 on tablet, 1 on mobile --- */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  justify-items: center;
+  background: #f7f7fa;
+  padding: 32px 0;
+  border-radius: 16px;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 900px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.product-card {
+  background: #fff;
+  padding: 20px 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  width: 260px;
+  text-align: center;
+  margin: 0;
+  transition: transform 0.2s ease, box-shadow 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
