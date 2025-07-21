@@ -1,0 +1,7 @@
+[
+  { "id": 1, "name": "Smartphone Pro", "price": 8599, "image": "/images/smartphone.jpg" },
+  { "id": 2, "name": "Wireless Headphones", "price": 2499, "image": "/images/headphones.jpg" },
+  { "id": 3, "name": "Laptop X1", "price": 79999, "image": "/images/laptop.jpg" },
+  { "id": 4, "name": "Fast Charger", "price": 999, "image": "/images/charger.jpg"},
+  { "id": 5, "name": "Trendy Bag", "price": 1999, "image": "/images/bag.jpg" }
+]
