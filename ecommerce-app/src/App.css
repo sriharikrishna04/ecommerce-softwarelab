@@ -15,7 +15,7 @@ a {
 }
 
 nav {
-  background-color:darkgoldenrod;
+  background-color:rgb(228, 203, 142);
   padding: 15px 30px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   display: flex;
@@ -551,5 +551,152 @@ button:hover {
     width: 100%;
     margin-left: 0;
     margin-top: 10px;
+  }
+}
+
+/* Cart badge styling for Navbar */
+.cart-badge {
+  display: inline-block;
+  min-width: 22px;
+  padding: 2px 7px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(90deg, #ffd700 0%, #ffb300 100%);
+  border-radius: 12px;
+  margin-left: 6px;
+  box-shadow: 0 2px 8px 0 rgba(212, 175, 55, 0.18);
+  vertical-align: middle;
+  letter-spacing: 0.1px;
+  border: 1.5px solid #fffbe6;
+  text-align: center;
+}
+
+/* Invoice/Bill Styling */
+.invoice-bill {
+  max-width: 420px;
+  margin: 32px auto 0 auto;
+  background: #fffbe6;
+  border: 2.5px solid #ffd700;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px 0 rgba(212, 175, 55, 0.13);
+  padding: 32px 28px 24px 28px;
+  color: #222;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.invoice-header {
+  text-align: center;
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #bfa43a;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+}
+
+.invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 12px;
+}
+
+.invoice-table th, .invoice-table td {
+  padding: 8px 0;
+  border-bottom: 1px solid #ffe066;
+  text-align: left;
+  font-size: 1.05rem;
+  white-space: nowrap;
+}
+
+.invoice-table th {
+  color: #bfa43a;
+  font-weight: 700;
+  background: #fffbe6;
+}
+
+.invoice-table td {
+  color: #222;
+}
+
+.invoice-total {
+  font-weight: bold;
+  color: #bfa43a;
+  font-size: 1.13rem;
+  text-align: right;
+  padding-top: 10px;
+  border-top: 2px solid #ffd700;
+  background: #fffbe6;
+}
+
+.invoice-bill .checkout-btn {
+  display: block;
+  width: 100%;
+  margin: 18px auto 0 auto;
+  background: linear-gradient(90deg, #ffd700 0%, #ffb300 100%);
+  color: #222;
+  font-weight: 700;
+  font-size: 1.08rem;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  box-shadow: 0 2px 8px 0 rgba(212, 175, 55, 0.13);
+  transition: background 0.18s, color 0.18s;
+  cursor: pointer;
+}
+
+.invoice-bill .checkout-btn:hover {
+  background: linear-gradient(90deg, #ffb300 0%, #ffd700 100%);
+  color: #111;
+}
+
+@media (max-width: 600px) {
+  .invoice-bill {
+    padding: 16px 4px 12px 4px;
+    border-radius: 10px;
+    font-size: 0.97rem;
+  }
+  .invoice-header {
+    font-size: 1.08rem;
+    margin-bottom: 10px;
+  }
+  .invoice-table th, .invoice-table td {
+    font-size: 0.97rem;
+    padding: 6px 0;
+  }
+  .invoice-total {
+    font-size: 1rem;
+    padding-top: 6px;
+  }
+  .invoice-bill .checkout-btn {
+    font-size: 1rem;
+    padding: 10px 0;
+    margin-top: 10px;
+  }
+  .invoice-table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .invoice-table, .invoice-table thead, .invoice-table tbody, .invoice-table tr {
+    display: block;
+    width: 100%;
+  }
+  .invoice-table th, .invoice-table td {
+    display: block;
+    width: 100%;
+    text-align: left !important;
+    border-bottom: 1px solid #ffe066;
+    padding: 5px 0;
+  }
+  .invoice-table tr {
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ffd700;
+  }
+  .invoice-total {
+    text-align: left;
+    padding-top: 8px;
   }
 }
